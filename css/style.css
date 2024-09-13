@@ -1,4 +1,119 @@
+/*Remove white space*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray;
+    font-family: fantasy;
+}
+
+.headerdiv{
+    height: 200px;
+    margin-bottom: 1%;
+}
+
+.footerdiv{
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+.menudiv{   
+    position: relative;
+    padding: 10px;
+    height: 40px;
+    top: 64px;
+    background-color: #60f222;
+    vertical-align: bottom;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+/*Only style a elements in menu list*/
+li>a{
+    text-decoration: none;
+    color: black;
+}
+
+header,div,footer{
+    background-color: #40b854;    
+}
+
+.dove{
+    grid-row: 1;
+    position: absolute;
+    max-height: 60px;
+    max-width: 60px;
+    left: auto;
+    right: 16px;
+    top: 32px;
+}
+
+h1, h2{
+    display: block;
+    text-align: center;
+}
+
 h1{
-  border-color: #d3e644;
-  border-style: dashed;
+    position: relative;
+    top: 40px;
+    font-size: 60px;
+    font-family: 'Lobster';
+}
+
+h2{
+    position:relative;
+    top: 20px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-content: stretch;
+}
+
+li{
+    font-size: 28px;
+    display: inline-block;
+    text-align: center;
+    flex: 1;
+}
+
+.welcome{
+    display: inline-block;
+    width: 59%;
+    left: 0;
+    vertical-align: top;
+    background-color: #60f222;
+    margin: 2%;
+    margin-top: 10px;
+    padding: 10px;
+    height: 502px;
+    font-size: 24px;
+}
+
+.favorites{
+    display: inline-block;
+    width:420px;
+    background-color: #60f222;
+    margin-top: 10px;
+    padding: .25%;
+}
+
+.photogrid{
+    display: grid;
+    background-color: #60f222;
+    grid-template-columns: 210px 210px;
+}
+
+.favorite-1, .favorite-2, .favorite-3, .favorite-4{
+    width: 210px;
+}
+
+.favorite-2{
+    display: inline;
+    grid-column: 2;
 }
